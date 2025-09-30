@@ -2,7 +2,6 @@ import { z } from 'zod';
 
 export const contactSchema = z.object({
   avatar: z
-    .string()
     .url()
     .startsWith('https://media.licdn.com', 'Avatar URL must be from LinkedIn (media.licdn.com)')
     .or(z.literal(''))
@@ -16,5 +15,4 @@ export const contactSchema = z.object({
 });
 
 export type ContactSchemaType = z.infer<typeof contactSchema>;
-
-export type ContactSchemaErrorType = z.inferFlattenedErrors<typeof contactSchema>;
+export type ContactSchemaErrorType = Record<string, { errors: string[] }> | undefined;
