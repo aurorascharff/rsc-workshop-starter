@@ -7,7 +7,7 @@ const prisma = new PrismaClient();
 const CONTACTS = [
   {
     avatar:
-      'https://media.licdn.com/dms/image/v2/D4D03AQFrYA7kjR4Wqg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1668631096577?e=1762387200&v=beta&t=Pyry5b8AVe0xbCoil-6kiQKt0_xWNY5hWJFAb-ZuvjQ',
+      'https://media.licdn.com/dms/image/v2/D4D03AQFrYA7kjR4Wqg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1668631096577?e=1765411200&v=beta&t=XEqorlyJkp1D4iCXMzl7CA4EM-P4nMrBhCewPGBWm3M',
     email: 'devlin.duldulao@inmeta.no',
     favorite: true,
     first: 'Devlin',
@@ -20,7 +20,7 @@ const CONTACTS = [
   },
   {
     avatar:
-      'https://media.licdn.com/dms/image/v2/D4D03AQFcCDu4ygJMvA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1731698370320?e=1762387200&v=beta&t=3wj-0WHrnqi1wdHAtJemU0adtsjjrQUJ8g3tRhBfdZA',
+      'https://media.licdn.com/dms/image/v2/D4D03AQFcCDu4ygJMvA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1731698370320?e=1765411200&v=beta&t=kKIEmrQj5YiVRM_KVOmkDH-5kQ0raexNmm_roOWK73E',
     email: 'aurora.scharff@inmeta.no',
     favorite: false,
     first: 'Aurora',
@@ -33,7 +33,7 @@ const CONTACTS = [
   },
   {
     avatar:
-      'https://media.licdn.com/dms/image/v2/C5103AQEW-xbR-2s5UA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516466253897?e=1762387200&v=beta&t=NNDtpDlqCh9uPyZmBqCtISN0ngKUtbf-TOHQVgxLE5Q',
+      'https://media.licdn.com/dms/image/v2/C5103AQEW-xbR-2s5UA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516466254031?e=1765411200&v=beta&t=Xyj_LGQ6OuWsAkg4uA5QVLxEArtW0pjAjp1XQnJDBVM',
     email: 'caspar.hoegh@inmeta.no',
     favorite: false,
     first: 'Caspar',
