@@ -38,5 +38,6 @@
       "source.fixAll.eslint": "explicit",
     },
     "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+    "prisma.pinToPrisma6": true,
   },
 }
