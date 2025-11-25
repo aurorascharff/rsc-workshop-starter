@@ -10,7 +10,7 @@ type Props = {
 
 export default function ErrorMessage({ children, onReset }: Props) {
   return (
-    <div className="flex justify-between rounded bg-destroy p-4 text-white">
+    <div className="flex justify-between rounded-sm bg-destroy p-4 text-white">
       {children}
       {onReset && (
         <button onClick={onReset}>

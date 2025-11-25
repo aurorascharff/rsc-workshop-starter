@@ -11,7 +11,7 @@ export default function Input({ errors, name, ...otherProps }: Props & React.Inp
       <input
         id={name}
         name={name}
-        className={errors ? 'outline outline-2 outline-destroy' : ''}
+        className={errors ? 'outline-solid outline-2 outline-destroy' : ''}
         aria-describedby="error"
         {...otherProps}
       />

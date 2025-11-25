@@ -31,7 +31,7 @@ export default async function ContactPage({ params }: PageProps) {
   return (
     <div className="flex flex-col gap-4 lg:flex-row">
       {contact.avatar && (
-        <div className="flex-shrink-0">
+        <div className="shrink-0">
           <Image
             priority
             width={192}

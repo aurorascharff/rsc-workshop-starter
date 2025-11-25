@@ -1,6 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --shadow-md: 0 0px 1px hsla(0, 0%, 0%, 0.6), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+  --shadow-sm: 0 0px 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+  --shadow-xs: 0 0px 1px hsla(0, 0%, 0%, 0.4);
+
+  --color-destroy: #d11433;
+  --color-destroy-dark: #b62f37;
+  --color-destroy-light: #ff6d79;
+
+  --color-gray: #e3e3e3;
+  --color-gray-dark: #818181;
+  --color-gray-light: #f7f7f7;
+
+  --color-primary: #2b63fd;
+  --color-primary-dark: #1a3dbf;
+  --color-primary-light: #7297ff;
+}
 
 html,
 body {

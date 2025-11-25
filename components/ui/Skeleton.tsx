@@ -8,11 +8,11 @@ type Props = {
 export default function Skeleton({ className }: Props) {
   return (
     <div className={cn('flex-1', className)}>
-      <div className="skeleton-animation mb-2 h-3 w-10 rounded" />
-      <div className="skeleton-animation mb-2 h-4 rounded" />
-      <div className="skeleton-animation mb-2 h-4 rounded" />
-      <div className="skeleton-animation mb-2 h-2 w-12 rounded" />
-      <div className="skeleton-animation mb-2 h-2 w-20 rounded" />
+      <div className="skeleton-animation mb-2 h-3 w-10 rounded-sm" />
+      <div className="skeleton-animation mb-2 h-4 rounded-sm" />
+      <div className="skeleton-animation mb-2 h-4 rounded-sm" />
+      <div className="skeleton-animation mb-2 h-2 w-12 rounded-sm" />
+      <div className="skeleton-animation mb-2 h-2 w-20 rounded-sm" />
     </div>
   );
 }
