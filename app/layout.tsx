@@ -24,8 +24,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={inter.className}>
         <div className="flex w-full flex-col sm:flex-row">
-          <div className="flex h-1/3 w-full flex-col border-r border-gray bg-gray-light sm:h-auto sm:w-[18rem] md:w-88">
-            <div className="flex items-center gap-2 border-b border-gray px-8 py-4">
+          <div className="border-gray bg-gray-light flex h-1/3 w-full flex-col border-r sm:h-auto sm:w-[18rem] md:w-88">
+            <div className="border-gray flex items-center gap-2 border-b px-8 py-4">
               <Suspense>
                 <Search />
               </Suspense>
@@ -33,14 +33,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 New
               </Button>
             </div>
-            <ContactList />
-            <div className="m-0 hidden flex-row items-center gap-2 border-t border-t-gray px-8 py-4 font-medium sm:flex">
+            <Suspense>
+              <ContactList />
+            </Suspense>
+            <div className="border-t-gray m-0 hidden flex-row items-center gap-2 border-t px-8 py-4 font-medium sm:flex">
               <Link className="flex items-center gap-2 text-black no-underline" href="/">
                 <Image priority width={30} height={30} src={Logo} alt="Next.js logo" />
                 Contacts
               </Link>
             </div>
-            <div className="flex border-t border-t-gray sm:hidden" />
+            <div className="border-t-gray flex border-t sm:hidden" />
           </div>
           <div className="h-2/3 w-full flex-1 px-16 py-8 sm:h-auto">{children}</div>
         </div>
