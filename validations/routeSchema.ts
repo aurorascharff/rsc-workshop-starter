@@ -5,7 +5,7 @@ const searchParamsSchema = z
   .object({
     q: z.string().default(''),
   })
-  .default({});
+  .default({ q: '' });
 
 export const { routes, useSafeParams, useSafeSearchParams } = createNavigationConfig(defineRoute => {
   return {
